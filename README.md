@@ -1,4 +1,4 @@
-# Lombok Website
+school shit
 
 made this for a friend's project, 
 
