@@ -1,0 +1,299 @@
+/* Global styles - these are the rules that affect our ENTIRE website, like rules for a whole playground */
+
+/* The * symbol is like a magic wand that selects EVERYTHING on our page at once - every button, picture, and word! */
+/* This is like saying "before we start decorating, let's clean everything up first!" */
+* {
+    margin: 0;     /* This removes the space AROUND elements - like removing the empty space around toys on a shelf */
+    padding: 0;    /* This removes the space INSIDE elements - like removing the stuffing inside a teddy bear */
+    box-sizing: border-box;  /* This makes all boxes include their borders in their size - like measuring a gift box including the wrapping paper */
+}
+
+/* The body is like the big piece of paper our whole website is drawn on */
+body {
+    font-family: 'Arial', sans-serif;  /* This picks what our letters look like - Arial is a simple, clean letter style */
+    background-color: #2c5334; /* This makes the background dark green - like painting the wall behind our artwork */
+    color: #333;  /* This makes all our regular text dark gray - like using a gray crayon for most of our words */
+    display: flex;  /* This is like telling things to stand in a line - it's a special way to arrange things */
+    justify-content: center;  /* This centers everything in the middle - like putting your toys in the center of your room */
+}
+
+/* The container is like a big white sheet of paper in the middle of our green background */
+.container {
+    width: 100%;  /* This makes our container stretch all the way across - like a piece of paper that's as wide as possible */
+    max-width: 1000px;  /* But this stops it from getting TOO wide - like saying "don't stretch wider than 1000 pixels" */
+    margin: 0 auto;  /* This centers our container - like putting our paper right in the middle of the table */
+    padding: 0;  /* No extra space inside our container - no empty borders */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);  /* This adds a soft shadow around our website - like holding a flashlight behind our paper to make it look like it's floating */
+}
+
+/* Navigation - this is the menu bar that helps people find their way around our website */
+nav {
+    display: flex;  /* This makes our menu items stand in a row - like toys lined up on a shelf */
+    justify-content: flex-end;  /* This pushes all our menu items to the right side - like pushing all your toys to one side of the room */
+    align-items: center;  /* This makes everything line up in the middle - not too high or too low */
+    padding: 1rem 2rem;  /* This adds space around our menu - like a little bubble of empty space */
+    background-color: transparent; /* This makes the background see-through - like using clear plastic instead of colored paper */
+    position: absolute; /* This is like letting our menu float free from the normal rules - it can go anywhere we want! */
+    top: 0;  /* This sticks our menu to the very top - like putting a sticker at the top of a page */
+    right: 0;  /* This stretches our menu all the way to the right edge */
+    left: 0;  /* This stretches our menu all the way to the left edge */
+    z-index: 3; /* This makes our menu stay on top of other things - like putting our menu on top of a stack of papers */
+}
+
+/* These are the regular links in our navigation menu */
+.nav-links a {
+    color: #666;  /* This makes our menu text medium gray - like using a gray crayon for these words */
+    text-decoration: none;  /* This removes the underlines from our links - like erasing the underlines from words */
+    margin-right: 2rem;  /* This adds space to the right of each link - like making sure toys have space between them */
+    font-weight: normal;  /* This makes the text not bold - like regular handwriting, not extra thick handwriting */
+    font-size: 1rem;  /* This sets how big the text is - 1rem is like "normal size" */
+}
+
+/* This styles our special Subscribe button that looks different from other links */
+.subscribe-btn {
+    padding: 0.5rem 1.5rem;  /* This adds space inside the button - like putting a little bubble of air inside a balloon */
+    border: 1px solid #2c5334;  /* This adds a thin green line around the button - like drawing a green outline */
+    color: #2c5334;  /* This makes the text green to match the border - like using the same green crayon for the words */
+    text-decoration: none;  /* This removes the underline from the link */
+    font-weight: normal;  /* Not bold text - just regular thickness */
+    background-color: transparent;  /* Clear background - like a window you can see through */
+    font-size: 1rem;  /* Normal size text */
+    transition: all 0.3s ease;  /* This makes the button change smoothly when you hover - like melting, not jumping */
+}
+
+/* This changes how our Subscribe button looks when someone hovers their mouse over it */
+.subscribe-btn:hover {
+    background-color: #2c5334;  /* The button fills with green when you hover - like pouring green paint into a container */
+    color: white;  /* The text turns white for better contrast - like switching to white chalk on a green board */
+}
+
+/* Hero section - this is the big banner at the top with the flower image */
+.hero {
+    display: flex;  /* Makes things line up in a row */
+    justify-content: space-between;  /* Pushes items to the edges with space in the middle - like pushing toys to opposite sides of a room */
+    align-items: center;  /* Centers things vertically - not too high or low */
+    background-color: transparent; /* No background color - we'll see the image instead */
+    position: relative;  /* This lets us place things exactly where we want them inside the hero */
+    min-height: 500px;  /* This makes sure our hero is at least 500 pixels tall - like making sure a picture frame is at least this big */
+    overflow: hidden;  /* This cuts off anything that's too big for the container - like putting a big picture in a smaller frame and trimming the edges */
+    width: 100%;  /* Makes the hero take up the full width - stretched all the way across */
+}
+
+/* This holds our main title text that goes on top of the hero image */
+.hero-content {
+    position: absolute;  /* This lets our text float freely - like a sticker we can put anywhere on the page */
+    left: 0;  /* Stretch all the way to the left edge */
+    right: 0;  /* Stretch all the way to the right edge */
+    top: 50%;  /* Put our text halfway down from the top */
+    transform: translateY(-50%);  /* This magic trick centers things perfectly - like adjusting a picture to be exactly in the middle */
+    text-align: center;  /* Centers the text horizontally - like centering words on a line */
+    z-index: 2;  /* Makes sure the text stays on top of the image - like putting our text sticker on top of our photo */
+    margin: 0 auto;  /* Centers the content in its container */
+}
+
+/* The main title (Lombok) */
+.hero h1 {
+    font-size: 3.5rem;  /* Makes the text very big - like using a giant paintbrush for the main title */
+    margin-bottom: 0.5rem;  /* Adds a small space below - like leaving a little gap below the title */
+    color: #000;  /* Black text for good contrast - like using black paint for important words */
+}
+
+/* The subtitle (Holistic health) */
+.hero h2 {
+    font-size: 2rem;  /* Smaller than the main title, but still big - like a medium-sized paintbrush */
+    font-weight: normal;  /* Not bold - just regular thickness */
+    color: #000;  /* Black text to match the main title */
+}
+
+/* The container for the hero image */
+.hero-image {
+    position: absolute;  /* This lets our image float freely - like a big sticker we can place anywhere */
+    right: 0;  /* Stretch to the right edge */
+    top: 0;  /* Start at the top edge */
+    left: 0;  /* Stretch to the left edge too */
+    width: 100%;  /* Take up the full width - stretched all the way across */
+    height: 100%;  /* Take up the full height too */
+    z-index: 0;  /* This puts the image behind other elements - like putting our photo under our stickers */
+    overflow: hidden;  /* Cuts off any parts of the image that don't fit - like trimming a photo to fit in a frame */
+}
+
+/* The actual hero image styling */
+.hero-image img {
+    width: 100%;  /* Makes the image stretch all the way across its container */
+    height: 120%;  /* Makes the image taller than its container - like using a picture bigger than the frame */
+    object-fit: cover;  /* Makes the image cover the area without getting squished - like stretching a photo to fill a frame without making people look funny */
+    object-position: center 10%;  /* Adjusts which part of the image we see - like sliding a big photo around behind a window to show the best part */
+    transform: translateY(-15%);  /* Moves the image up - like pulling the photo upward behind our frame */
+}
+
+/* Articles section - where we show our article cards */
+.articles-section {
+    background-color: #e0e0de; /* Light gray background - like using light gray construction paper */
+    padding: 5rem 2rem 6rem;  /* Adds lots of space around our content - top, sides, and bottom - like a big bubble of empty space */
+}
+
+/* The heading for the articles section */
+.articles-section h2 {
+    text-align: center;  /* Centers the text - like putting the title right in the middle */
+    margin-bottom: 4rem;  /* Adds a big space below the heading - like leaving a big gap below the title */
+    font-size: 1.8rem;  /* Makes the text larger than normal - like using a big paintbrush, but not the biggest */
+    color: #333;  /* Dark gray text - like using a dark gray crayon */
+}
+
+/* This container holds all the article cards in a row */
+.article-cards {
+    display: flex;  /* Makes cards line up in a row - like lining up toys side by side */
+    justify-content: space-between;  /* Spreads the cards out evenly - like spacing toys evenly across a shelf */
+    gap: 2rem;  /* Adds space between cards - like making sure there's air between each toy */
+    max-width: 950px;  /* Makes sure the container isn't too wide - like saying "don't stretch wider than this" */
+    margin: 0 auto;  /* Centers the container - like putting our row of toys in the middle of the table */
+}
+
+/* Each individual card - like a trading card or small poster */
+.card {
+    background-color: white;  /* White background for each card - like using white paper for each card */
+    border-radius: 0;  /* No rounded corners - sharp corners like a regular piece of paper */
+    overflow: hidden;  /* Cuts off anything that sticks out - like trimming the edges of a photo */
+    flex: 1;  /* Makes each card take up equal space - like giving each toy the same amount of shelf space */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);  /* Adds a tiny shadow - like the card is floating just a tiny bit above the page */
+    min-height: 450px;  /* Makes sure each card is at least this tall - like setting a minimum size for a picture frame */
+    display: flex;  /* Uses flexbox inside the card too - like organizing the parts of the card in a special way */
+    flex-direction: column;  /* Stacks items vertically - like stacking blocks on top of each other instead of side by side */
+}
+
+/* The container for the card's image - like the top half of a trading card */
+.card-image {
+    height: 240px;  /* Sets how tall the image area is - like deciding how much of the card should be picture */
+    overflow: hidden;  /* Cuts off any image parts that don't fit - like trimming a photo to fit */
+}
+
+/* The actual image in each card */
+.card-image img {
+    width: 100%;  /* Makes the image fill the width of its container - stretched all the way across */
+    height: 100%;  /* Makes the image fill the height too - stretched all the way top to bottom */
+    object-fit: cover;  /* Makes the image cover the area without getting squished - like making sure people in photos don't look too skinny or fat */
+}
+
+/* The text content area of each card - like the bottom half of a trading card */
+.card-content {
+    padding: 2.5rem 1.5rem 3rem;  /* Adds space around the text - top, sides, and bottom - like a bubble of air around the words */
+    text-align: center;  /* Centers the text horizontally - like putting all the words in the middle of the line */
+    flex-grow: 1;  /* Lets this section grow to fill available space - like a balloon that expands to fill available space */
+    display: flex;  /* Uses flexbox for layout - our special way of arranging things */
+    flex-direction: column;  /* Stacks content vertically - like stacking blocks */
+    justify-content: flex-start;  /* Aligns content to the top - like pushing all the toys to the top of a shelf */
+}
+
+/* The heading in each card - like the title of a trading card */
+.card-content h3 {
+    margin-bottom: 1rem;  /* Adds space below the heading - like leaving a gap below the title */
+    font-size: 1.2rem;  /* Makes the text a bit bigger than normal - like writing a bit bigger than usual */
+    color: #333;  /* Dark gray text - like using a dark gray crayon */
+}
+
+/* The paragraph text in each card - like the description on a trading card */
+.card-content p {
+    color: #666;  /* Medium gray text - like using a medium gray crayon */
+    font-size: 0.85rem;  /* Makes the text a bit smaller than normal - like tiny handwriting */
+    line-height: 1.5;  /* Adds space between lines of text - like leaving room between rows of words */
+}
+
+/* About Section - the text section that explains what the site is about */
+.about-section {
+    background-color: white;  /* White background - like using white paper */
+    padding: 5rem 3rem;  /* Adds lots of space around our content - like a big bubble of empty space */
+    text-align: center;  /* Centers the text - like putting all the words in the middle */
+}
+
+/* The About section heading */
+.about-section h2 {
+    margin-bottom: 2rem;  /* Adds space below the heading - like leaving a gap after the title */
+    font-size: 1.8rem;  /* Makes the text bigger than normal - like using a medium-big paintbrush */
+}
+
+/* The paragraph in the About section */
+.about-section p {
+    max-width: 800px;  /* Makes sure the text isn't too wide - like saying "don't stretch wider than this" */
+    margin: 0 auto;  /* Centers the paragraph - like putting our words right in the middle */
+    line-height: 1.6;  /* Adds space between lines - like leaving room between rows of handwriting */
+    color: #333;  /* Dark gray text - like using a dark gray crayon */
+}
+
+/* Subscribe Section - where people can sign up with their email */
+.subscribe-section {
+    background-color: #e0e0de;  /* Light gray background - like using light gray construction paper */
+    padding: 5rem 2rem;  /* Adds lots of space around our content - like a big bubble of empty space */
+    text-align: center;  /* Centers everything - like putting all our items right in the middle */
+}
+
+/* The Subscribe section heading */
+.subscribe-section h2 {
+    margin-bottom: 1rem;  /* Adds space below the heading - like leaving a gap after the title */
+    font-size: 1.8rem;  /* Makes the text bigger than normal - like using a medium-big paintbrush */
+}
+
+/* The paragraph in the Subscribe section */
+.subscribe-section p {
+    margin-bottom: 2rem;  /* Adds space below the paragraph - like leaving a gap after these words */
+}
+
+/* The form container for the email subscription - like a sign-up sheet */
+.subscribe-form {
+    display: flex;  /* Uses flexbox for layout - our special way of arranging things */
+    flex-direction: column;  /* Stacks items vertically - like stacking blocks on top of each other */
+    align-items: center;  /* Centers items horizontally - like putting each block right in the middle */
+    max-width: 400px;  /* Makes sure the form isn't too wide - like saying "don't stretch wider than this" */
+    margin: 0 auto;  /* Centers the form - like putting our sign-up sheet right in the middle */
+}
+
+/* The email input field - where people type their email address */
+.subscribe-form input {
+    width: 100%;  /* Makes the input take up full width - stretched all the way across */
+    padding: 0.8rem;  /* Adds space inside the input field - like making the text box roomy inside */
+    margin-bottom: 1rem;  /* Adds space below the input - like leaving a gap below */
+    border: 1px solid #ccc;  /* Adds a light gray border - like drawing a light gray line around the box */
+}
+
+/* The submit button - what people click to send their information */
+.subscribe-form button {
+    padding: 0.5rem 2rem;  /* Adds space inside the button - like making the button roomy inside */
+    background-color: white;  /* White background - like using white paper */
+    border: 1px solid #333;  /* Dark gray border - like drawing a dark gray line around the button */
+    cursor: pointer;  /* Changes the mouse cursor to a pointing hand - like your computer pointing its finger at the button */
+}
+
+/* Footer - the very bottom section of our website */
+footer {
+    background-color: white;  /* White background - like using white paper */
+    padding: 2rem;  /* Adds space inside the footer - like a bubble of empty space */
+    display: flex;  /* Uses flexbox for layout - our special way of arranging things */
+    justify-content: space-between;  /* Spreads items to the edges - like pushing toys to opposite sides of a room */
+    align-items: center;  /* Centers items vertically - not too high or low */
+}
+
+/* Container for the social media icons - like a row of buttons */
+.social-icons {
+    display: flex;  /* Makes icons line up in a row - like lining up buttons side by side */
+}
+
+/* Each individual social media icon - like a round button */
+.social-icon {
+    width: 30px;  /* Sets how wide each icon is - like saying "each button is this wide" */
+    height: 30px;  /* Sets how tall each icon is - like saying "each button is this tall" */
+    background-color: #2c5334;  /* Green background color - like painting each button green */
+    border-radius: 50%;  /* Makes the icons perfectly round - like making circle buttons */
+    margin-right: 10px;  /* Adds space to the right of each icon - like leaving a gap between buttons */
+    display: block;  /* Makes each icon a block element - like making each button solid */
+}
+
+/* Container for the footer navigation links */
+.footer-links {
+    display: flex;  /* Makes links line up in a row - like lining up words side by side */
+}
+
+/* Each navigation link in the footer */
+.footer-links a {
+    margin-left: 1.5rem;  /* Adds space to the left of each link - like leaving a gap between words */
+    text-decoration: none;  /* Removes the underline from links - like erasing the underlines from words */
+    color: #333;  /* Dark gray text - like using a dark gray crayon */
+}

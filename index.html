@@ -1,0 +1,160 @@
+<!-- This line tells browsers that this is an HTML5 document - like telling friends "we're playing by the newest rules of the game!" -->
+<!DOCTYPE html>
+<!-- The html tag is like the big box that holds our entire website - 'lang="en"' is like saying "this website speaks English" -->
+<html lang="en">
+<!-- The head section is like the brain of our webpage - it has important information that visitors don't see directly -->
+<head>
+    <!-- This sets the language to UTF-8, which is like telling the computer "we need to use all kinds of letters and symbols" -->
+    <meta charset="UTF-8">
+    <!-- This makes our website look good on phones and tablets too - like making sure our picture fits on any size paper -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title is what shows up on the browser tab - it's like the name tag for our website -->
+    <title>Lombok - Holistic Health</title>
+    <!-- This connects our HTML (the structure) to our CSS (the colors and decorations) - like connecting a coloring book to its colors -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- The body is where all the stuff people actually see goes - like the parts of a toy that you can touch and play with -->
+<body>
+    <!-- This container is like a big sheet of paper that holds all our website parts in the middle of the screen -->
+    <div class="container">
+        <!-- The header is like the top of a letter - it's the first thing people see -->
+        <header>
+            <!-- The hero section is like the cover of a picture book - big and eye-catching -->
+            <div class="hero">
+                <!-- This div is like a special frame just for our main picture -->
+                <div class="hero-image">
+                    <!-- The img tag is how we put pictures on our page - like sticking a photo on paper -->
+                    <!-- src is like telling the computer "the picture is in this folder" -->
+                    <!-- alt is like a backup description in case the picture doesn't show up or for people who can't see it -->
+                    <img src="images/protea.jpg" alt="Protea flower">
+                </div>
+                
+                <!-- The nav element is like a map that helps people find their way around our website -->
+                <nav>
+                    <!-- This div holds our navigation buttons in one group - like keeping all your crayons in one box -->
+                    <div class="nav-links">
+                        <!-- These are like magic buttons that take visitors to different parts of our page when clicked -->
+                        <!-- The # and word after it is like telling the button "when someone clicks you, take them to the section with this name" -->
+                        <a href="#about">About</a>
+                        <a href="#articles">Articles</a>
+                    </div>
+                    <!-- This is a special button that looks different and takes people to the subscribe section -->
+                    <a href="#subscribe" class="subscribe-btn">Subscribe</a>
+                </nav>
+                
+                <!-- This holds our main title words that go on top of the picture - like the title on a book cover -->
+                <div class="hero-content">
+                    <!-- h1 is the biggest, most important title - like when you write your name REALLY BIG on your art project -->
+                    <h1>Lombok</h1>
+                    <!-- h2 is the second most important title - not as big as h1, but still special -->
+                    <h2>Holistic health</h2>
+                </div>
+            </div>
+        </header>
+        
+        <!-- The main element holds all the important stuff in our website - like the pages in a book that tell the story -->
+        <main>
+            <!-- This section is where we show our article cards - like putting different toys on a shelf -->
+            <!-- The id="articles" is like a name tag so our navigation buttons can find this section -->
+            <section class="articles-section" id="articles">
+                <!-- This h2 heading is like a sign that tells people "Hey! These are articles!" -->
+                <h2>Latest articles</h2>
+                
+                <!-- This div is like a row of boxes that holds all our article cards side by side -->
+                <div class="article-cards">
+                    <!-- Each card is like a mini-poster with a picture and some words - like a trading card -->
+                    <div class="card">
+                        <!-- This part holds just the picture of the card - like the top half of a postcard -->
+                        <div class="card-image">
+                            <!-- This is the actual picture that goes on our card - we're using a pretty flower picture -->
+                            <img src="images/flower1.jpg" alt="Pink dahlia flower">
+                        </div>
+                        <!-- This part holds the words that go on our card - like the message part of a postcard -->
+                        <div class="card-content">
+                            <!-- h3 is like a smaller title just for this card - like the name of a character on a trading card -->
+                            <h3>Lorem</h3>
+                            <!-- The p tag is for regular paragraph text - like the story on the back of a trading card -->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- This is our second card - it works exactly the same as the first one, but has different pictures and words -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/flower2.jpg" alt="Yellow flower">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- This is our third card - it's just like the others but with its own unique picture and words -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/flower3.jpg" alt="Orange cosmos flower">
+                        </div>
+                        <div class="card-content">
+                            <h3>Dolor</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- This is the About section - like the part in a book that tells you what the story is about -->
+            <!-- The id="about" is a name tag so our navigation buttons can find this section -->
+            <section class="about-section" id="about">
+                <!-- The title for this section - like a chapter heading in a book -->
+                <h2>About</h2>
+                <!-- This paragraph has all our about information - right now it's filled with "pretend text" called lorem ipsum -->
+                <!-- Lorem ipsum is like when kids say "blah blah blah" as a placeholder before they know what to actually say -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt commodi optio reprehenderit harum, neque quo aliquid et nisi? Doloremque numquam aut iure illum cupiditate laboriosam cum alias iusto error, dignissimos quam praesentium nihil odio voluptatum facere consectetur voluptates necessitatibus sunt nisi. Eius amet enim odit accusantium excepturi eos repellendus quam neque. Dolores, tempore. Natus excepturi consectetur odio dolorem commodi blanditiis!
+                </p>
+            </section>
+            
+            <!-- This is the Subscribe section - like a special page where people can sign up to be your pen pal -->
+            <!-- The id="subscribe" is a name tag so our navigation buttons can find this section -->
+            <section class="subscribe-section" id="subscribe">
+                <!-- The title for this section - tells people what this part is for -->
+                <h2>Subscribe</h2>
+                <!-- A short message explaining why people might want to subscribe - like saying "Join our club!" -->
+                <p>Lorem ipsum dolor sit.</p>
+                <!-- The form element is like a special piece of paper people can fill out - like a sign-up sheet for a club -->
+                <!-- When someone clicks submit, their information gets sent to whoever runs the website -->
+                <form class="subscribe-form">
+                    <!-- This input field is where people type their email address - like a blank line on a form -->
+                    <!-- placeholder shows ghost text that disappears when you start typing - like faint guiding lines -->
+                    <!-- required means people MUST fill this out - like when a teacher says "you must write your name" -->
+                    <input type="email" placeholder="E-post" required>
+                    <!-- This button is what people click to send their information - like putting their form in a mailbox -->
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        
+        <!-- The footer is at the very bottom of the page - like the last page of a book that has extra information -->
+        <footer>
+            <!-- This holds our social media buttons - like a row of telephones to call different friends -->
+            <div class="social-icons">
+                <!-- Each of these links would normally go to different social media pages - like Instagram, Facebook, etc. -->
+                <!-- Right now they're empty (just #) - like telephones that aren't connected to anyone yet -->
+                <!-- In CSS, we make them look like green circles, similar to social media icons -->
+                <a href="#" class="social-icon"></a>
+                <a href="#" class="social-icon"></a>
+                <a href="#" class="social-icon"></a>
+                <a href="#" class="social-icon"></a>
+            </div>
+            <!-- This has the same navigation links as the top of the page - like a second map at the end of a book -->
+            <!-- Having links at the bottom is helpful so people don't have to scroll all the way back up -->
+            <div class="footer-links">
+                <!-- These take visitors to the same sections as the top navigation buttons -->
+                <a href="#about">About</a>
+                <a href="#articles">Articles</a>
+                <a href="#subscribe">Subscribe</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
